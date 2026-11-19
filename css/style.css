@@ -1,0 +1,1710 @@
+/* Variables Styles */
+:root {
+    --grey-color: #6A7292
+}
+
+
+
+/* Global Style */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    background-color: #F9FAFB;
+
+    scroll-behavior: smooth;
+}
+
+.m-auto {
+    margin-inline: auto;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.m-50 {
+    margin-block: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bg-color {
+    background-color: violet;
+}
+
+img {
+    width: 2rem;
+    border-radius: 50%;
+    display: block;
+}
+
+span {
+    display: inline;
+}
+
+/* ======================================= */
+
+/* Start NavBar Section */
+
+/* header {
+    gap: 0.5rem;
+    grid-area: header;
+    height: 7rem;
+    align-items: flex-start;
+} */
+.navbar-section {
+    grid-area: nav;
+    margin-left: 1rem;
+
+}
+
+.navbar {
+    margin: 1rem;
+    background-image: radial-gradient(circle, #e9ecf0, #dae1e9);
+    border-radius: 1rem;
+    align-items: start;
+}
+
+.navbar-left {
+    padding: 1.5rem;
+    /* background-color:yellow; */
+    /* width: 50%; */
+    gap: 0.5rem;
+}
+
+.navbar-left .navbar-left-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+    gap: 0.5rem;
+}
+
+.navbar-left .navbar-img img {
+    display: block;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.navbar-left .navbar-text span {
+    display: inline-block;
+    font-size: 0.6rem;
+}
+
+.navbar-left .navbar-text p {
+    font-size: 0.5rem;
+    color: #808795;
+    margin-top: 0;
+    margin-left: 0.5rem;
+}
+
+.navbar-left .notification {
+    background-color: #F9FAFB;
+    display: inline;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.navbar-left .notification span {
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    background-color: red;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    padding: 0 0.25rem;
+}
+
+.navbar-left .search {
+    background-color: #F9FAFB;
+    display: inline;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-left .notification:hover,
+.navbar-left .search:hover {
+    background-color: #F3F4F6;
+    cursor: pointer;
+}
+
+.navbar-right {
+    padding: 1rem;
+    /* background-color:aqua; */
+    gap: 0.5rem;
+    direction: rtl;
+}
+
+.navbar-right .coins {
+    background-color: #3843E7;
+    display: inline;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.navbar-right .navbar-right-content h1 {
+    font-size: 1.5rem;
+    margin-block: 0;
+}
+
+.navbar-right .navbar-right-content p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-block: 0;
+    color: #586372;
+}
+
+.navbar-right .bg-bounce-color {
+    background-color: #F0FDF4;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-right .bg-bounce-color span {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: #178E48;
+}
+
+.navbar-right .bounce {
+    display: inline;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #01C951;
+    border-radius: 50%;
+    animation: green-circle 1s infinite alternate;
+}
+
+@keyframes green-circle {
+
+    to {
+        background-color: #7bdaa1;
+    }
+}
+
+/* End NavBar Section */
+/* ========================================== */
+
+/* Start Aside Section */
+.asidebar-section {
+    grid-area: aside;
+    direction: rtl;
+}
+
+aside {
+    background-color: white;
+    direction: rtl;
+    width: 80%;
+    /* margin-left: 3.5rem; */
+    position: sticky;
+    top: 0;
+}
+
+.aside-title {
+    /* background-color: red; */
+    padding: 0.5rem 1rem;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    /* scrollbar-width: thin; */
+}
+
+.aside-title .coins {
+    background-color: #3843E7;
+    display: inline;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.aside-title .aside-content h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-block: 0;
+}
+
+.aside-title .aside-content p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-block: 0.25rem;
+    color: #586372;
+}
+
+.aside-buttons {
+    margin-bottom: 1rem;
+}
+
+.aside-buttons button {
+    width: 80%;
+    margin-bottom: 0.5rem;
+    text-align: start;
+
+}
+
+.aside-buttons .house-color {
+    color: #155DFC;
+}
+
+.aside-buttons .btn {
+    background-color: #EFF6FF;
+}
+
+.aside-buttons span,
+.aside-buttons i {
+    color: #545F6E;
+    font-size: 0.8rem;
+
+}
+
+.aside-buttons button:hover {
+    background-color: #F9FAFB;
+}
+
+aside .speed-title {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    color: #656E7B;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.speed-actions button {
+    gap: 0.5rem;
+    width: 80%;
+}
+
+.speed-actions button:hover {
+    background-color: #FAFAFA;
+    transform: scale(1.05);
+}
+
+aside .speed-actions .send-money {
+    background-color: #DBE8FC;
+    padding: 0;
+    width: 2rem;
+    border-radius: 0.5rem;
+}
+
+aside .speed-actions .send-money i {
+    font-size: 0.8rem;
+    padding: 0.5rem 0rem;
+    background-color: #DBE8FC;
+}
+
+.bg-investment {
+    background-color: #FFF0E6;
+}
+
+.speed-actions span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #2B313F;
+}
+
+/* End Aside Section */
+/* ================================= */
+
+/* Start Main Layout Section */
+.main-layout {
+    background-color: #F9FAFB;
+    height: 100vh;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav aside aside aside"
+        "recharge recharge recharge recharge recharge recharge recharge recharge recharge aside aside aside"
+        "deal deal deal deal deal deal activity activity activity aside aside aside"
+        "deal deal deal deal deal deal month month month aside aside aside"
+        "payment payment payment income income income view view view aside aside aside";
+}
+
+/* Start Recharging Section */
+.recharging-section {
+    grid-area: recharge;
+    /* background-color: blue; */
+    padding: 0;
+    margin-top: 0.5rem;
+    direction: rtl;
+}
+
+.m-l {
+    margin-left: 2.5rem;
+}
+
+.recharging-section .gallery-card {
+    margin-block: 0;
+    margin-left: 2rem;
+    width: 95%;
+    flex-direction: row-reverse;
+
+}
+
+.recharging-section .gallery-card .inner {
+    padding: 0.5rem;
+    width: 33.333%;
+}
+
+.recharging-section .card {
+    padding: 10px 30px;
+    margin-bottom: 0;
+    border: 1px solid #E6E7EB;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.recharging-section .card h3 {
+    font-size: 16px;
+    color: #6A7282;
+    margin-bottom: 5px;
+}
+
+.recharging-section .card p {
+    font-size: 35px;
+    margin-block: 5px;
+    font-weight: 900;
+    color: #101828;
+}
+
+.recharging-section .card span {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.recharging-section .card .fa-arrow-down {
+    font-size: 0.7rem;
+    color: #E80611;
+}
+
+.recharging-section .card .fa-arrow-up {
+    font-size: 0.7rem;
+    color: #00A63E;
+}
+
+.recharging-section .card .badge1 {
+    color: #E7000B;
+
+}
+
+.recharging-section .card .badge2 {
+    color: #00A63E;
+}
+
+/* End Recharging Section */
+/* =============================================== */
+
+/* Start Deals Section */
+.deals-section {
+    grid-area: deal;
+    /* background-color: green; */
+    direction: rtl;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.deals-section .deals-gallery {
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    border: 1px solid #E6E7EB;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.deals-gallery .title-deal h3 {
+    font-size: 0.9rem;
+}
+
+.deals-gallery .title-deal i {
+    font-size: 0.7rem;
+}
+
+.deals-gallery .title-deal p {
+    color: #101828;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+table {
+
+    /* background-color: red; */
+    width: 100%;
+    text-align: right;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.border b {
+    border-bottom: 2px solid black;
+}
+
+th {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+table td {
+    padding: 0.75rem 0.25rem;
+    color: #364153;
+    font-weight: 400;
+}
+
+tr {
+    border-top: 1px solid #F9FAFB;
+    border-bottom: 1px solid #F9FAFB;
+
+}
+
+td {
+    padding: 0;
+    width: 20%;
+}
+
+td h4 {
+    font-size: 0.6rem;
+    margin-block: 0rem;
+}
+
+td span {
+    margin-top: 0;
+    font-size: 0.7rem;
+    display: block;
+}
+
+td .bg-down {
+    background-color: #9F2D00;
+    width: 1rem;
+}
+
+td .avatar2 {
+    padding: 0.25rem;
+    gap: 0.25rem;
+    width: 8rem;
+}
+
+td .bg-down {
+    background-color: #DBFCE7;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+td .bg-down span {
+    display: inline;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    color: #016630;
+}
+
+td .fa-arrow-down {
+    font-size: 0.7rem;
+    margin-right: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.date {
+    font-size: 0.65rem;
+    color: #4A5565;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 0.7rem;
+    color: #00A63E;
+}
+
+.price2 {
+    font-size: 0.7rem;
+    color: #101828;
+}
+
+.complete {
+    display: inline;
+    font-size: 0.6rem;
+    color: #9F2D00;
+}
+
+td .bg-food {
+    background-color: #FFEDB9;
+    width: 3rem;
+    border-radius: 1rem;
+
+}
+
+td .fa-utensils {
+    color: #F6530C;
+    background-color: #FFEDD4;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+td .utensil {
+    color: #F6530C;
+    background-color: unset;
+    padding: 0.2;
+    width: 0.2rem;
+    font-size: 0.7rem;
+    border-radius: 0;
+}
+
+td .fa-cart-shopping {
+    color: #155DFC;
+    background-color: #DBEAFE;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+td .shopping {
+    color: #155DFC;
+    background-color: unset;
+    padding: 0.2;
+    width: 0.2rem;
+    font-size: 0.7rem;
+    border-radius: 0;
+}
+
+td .bg-shopping {
+    background-color: #DBEAFE;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+td .bg-users {
+    background-color: #F3E8FF;
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+td .fa-users {
+    color: #8F46C4;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    border-radius: 50%;
+}
+
+td .income-users {
+    display: inline;
+    font-size: 0.6rem;
+}
+
+td .fa-briefcase {
+    color: #016630;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+}
+
+td .bg-briefcase {
+    background-color: #DBFCE7;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+td .briefwork {
+    display: inline;
+    font-size: 0.7rem;
+}
+
+td .bg-hold {
+    background-color: #FEF9C2;
+    width: 3rem;
+    border-radius: 1rem;
+    padding-block: 0.25rem;
+}
+
+td .hold {
+    color: #894B00;
+}
+
+td .fa-gas-pump {
+    color: #E7000B;
+    background-color: #FFE2E2;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+
+}
+
+td .fa-car {
+    color: #9F0712;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+}
+
+.car {
+    display: inline;
+    font-size: 0.6rem;
+    color: #9F2D00;
+}
+
+td .bg-car {
+    background-color: #FEF9C2;
+    width: 4rem;
+    border-radius: 1rem;
+    padding-block: 0.25rem;
+}
+
+td .fa-film {
+    color: #533EF7;
+    background-color: #E0E7FF;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+td .bg-tv {
+    background-color: #E0E7FF;
+    padding: 0.2rem;
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+td .tv {
+    display: inline;
+    font-size: 0.7rem;
+    color: #372AAC;
+}
+
+td .fa-dumbbell {
+    color: #0092B8;
+    background-color: #CEFAFE;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+td .bg-heart {
+    background-color: #CEFAFE;
+    padding: 0.2rem;
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+td .fa-heart-pulse {
+    display: inline;
+    font-size: 0.6rem;
+    color: #005F78;
+}
+
+td .health {
+    display: inline;
+    font-size: 0.7rem;
+    color: #005F78;
+}
+
+td .fa-graduation-cap {
+    color: #009966;
+    background-color: #D0FAE5;
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+td .fa-book {
+    display: inline;
+    font-size: 0.6rem;
+    color: #0F6045;
+}
+
+td .education {
+    display: inline;
+    font-size: 0.7rem;
+    color: #006045;
+}
+
+/* End Deals Section */
+/* =============================================== */
+
+/* Start Activities Section */
+
+.activities-section {
+    grid-area: activity;
+    /* background-color: yellow; */
+    direction: rtl;
+    margin-top: 0.5rem;
+}
+
+.activities-section .container {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.activities-section .activity-card {
+    background-color: #EFF6FF;
+    border-radius: 0.5rem;
+    border-left: 5px solid #2B7FFF;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.activity-card .fa-user-plus {
+    color: #155DFC;
+    background-color: #DBEAFE;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 0.75rem;
+    width: 1.5rem;
+    padding: 0.3rem 0.2rem;
+}
+
+.activity-card .fa-credit-card {
+    color: #00A63E;
+    background-color: #DBFCE7;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 0.75rem;
+    width: 1.5rem;
+    padding: 0.3rem 0.2rem;
+}
+
+.activities-section .container h3 {
+    font-size: 0.9rem;
+}
+
+.activities-section .activity-card h4 {
+    font-size: 0.8rem;
+    margin-block: 0;
+}
+
+.activities-section .activity-card p {
+    color: #4A5565;
+    font-size: 0.6rem;
+    margin-top: 0.25rem;
+}
+
+.activities-section .activity-card span {
+    font-size: 0.6rem;
+    margin-block: 0;
+    color: #155DFC;
+    padding-top: 0.25rem;
+
+}
+
+.activities-section .line-bottom {
+    margin-block: 1rem;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.border-left {
+    border-left: 5px solid #00C950 !important;
+}
+
+.activities-section .activity-card .credit {
+    color: #00A654;
+}
+
+.activities-section .show-all {
+    margin-bottom: 0.5rem;
+}
+
+.activities-section .show-all span {
+    color: #1447E6;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+/* End Activities Section */
+/* ================================== */
+
+/* Start Resets-monthly-section  */
+
+.resets-monthly-section {
+    grid-area: month;
+    /* background-color: bisque; */
+    direction: rtl;
+}
+
+.resets-monthly-section .container {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.resets-monthly-section .container h3 {
+    font-size: 0.9rem;
+    /* display: inline; */
+}
+
+.resets-monthly-section .container span {
+    font-size: 0.7rem;
+    color: #101828;
+}
+
+.resets-monthly-section .fa-chevron-left {
+    font-size: 0.7rem;
+}
+
+.resets-monthly-section .month-title span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.resets-monthly-section .month-title p {
+    font-size: 0.7rem;
+    margin-top: 0;
+    color: #707070;
+}
+
+.resets-monthly-section .services-gallery .service-card {
+    width: 50%;
+    padding: 0.25rem;
+}
+
+.resets-monthly-section .service-card .inner {
+    padding: 0.5rem;
+    background-color: #F9FAFB;
+    border: 2px solid #F4F5F7;
+    border-radius: 0.5rem;
+
+
+}
+
+.resets-monthly-section .service-card i {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+
+}
+
+.resets-monthly-section .service-card .fa-wifi {
+    color: #3473FC;
+}
+
+.resets-monthly-section .service-card .fa-bolt {
+    color: #D08700;
+}
+
+.resets-monthly-section .service-card .fa-phone {
+    color: #00A63E;
+}
+
+.resets-monthly-section .service-card .fa-tv {
+    color: #E7000B;
+}
+
+.resets-monthly-section .service-card span {
+    color: #6A7292;
+    font-size: 0.6rem;
+}
+
+.resets-monthly-section .service-card .price-service {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-block: 0;
+}
+
+.resets-monthly-section .service-card .date-service {
+    color: #FB2C36;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.resets-monthly-section .service-card .date-service2 {
+    color: #FF6900;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.resets-monthly-section .service-card .date-service3 {
+    color: #00A63E;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.resets-monthly-section .service-card .date-service4 {
+    color: #6A7282;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.service-card .bg-wifi {
+    background-color: #DBEAFE;
+    width: 1.4rem;
+    border-radius: 0.5rem;
+}
+
+.service-card .bg-bolt {
+    background-color: #FEF9C2;
+    width: 1.4rem;
+    border-radius: 0.5rem;
+}
+
+.service-card .bg-phone {
+    background-color: #DBFCE7;
+    width: 1.4rem;
+    border-radius: 0.5rem;
+}
+
+.service-card .bg-netflix {
+    background-color: #FFE2E2;
+    width: 1.4rem;
+    border-radius: 0.5rem;
+}
+
+
+/* End Resets-monthly-section  */
+/* ==================================== */
+
+
+/* Start Payment Section */
+.payments-section {
+    grid-area: payment;
+    direction: rtl;
+}
+
+.payments-section .contain {
+    /* background-color: red; */
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+}
+
+.payments-section .payment-gallery {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    perspective: 1000px;
+}
+
+.payments-section .payment-gallery h3 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.payments-section .payment-gallery .fa-solid.fa-chevron-left,
+.payments-section .payment-gallery .title {
+    font-size: 0.7rem;
+    color: #101828;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+}
+
+.flip-card {
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem 0.1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    width: 250px;
+    height: 190px;
+}
+
+.bg-flip1 {
+    background-color: #372AAC;
+}
+.bg-flip2 {
+    background-color: #C70036;
+
+}
+.bg-flip3 {
+    background-color: #193CB8;
+
+}
+
+.flip-card:hover{
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    z-index: 1;
+}
+
+.card-back {
+    z-index: 2;
+    transform: rotateY(180deg);
+    background-color: #0B1220;
+}
+
+.card-back .one {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    background: linear-gradient(to right, black, #424242);
+}
+
+.payment-gallery .card-back>.signature {
+    font-size: 0.5rem;
+    font-weight: 300;
+    padding-block: 0.5rem;
+    color: var(--grey-color);
+    display: inline;
+}
+
+.card-back .two {
+    margin-top: 0.25rem;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 0.25rem;
+    background-color: white;
+
+}
+
+.card-back .two-1 {
+    margin-top: 0.25rem;
+    width: 70%;
+    height: 0.6rem;
+    /* border-radius: 0.25rem; */
+    background: linear-gradient(white, #DDE1E4);
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+
+
+}
+
+.card-back .two .num {
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: black;
+    padding: 0;
+}
+
+.card-back .code {
+    margin-left: 1.5rem;
+    color: var(--grey-color);
+}
+
+.card-back .num2 {
+    color: black;
+    display: inline-block;
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+}
+
+.card-back .code2 {
+    margin-left: 2rem;
+    color: var(--grey-color);
+}
+
+.card-back .pp01 {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+}
+
+.flip-card>div{
+    padding-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: unset;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.payments-section .payment-gallery:hover .card-front {
+    transform: rotateY('180deg');
+}
+
+
+.payment-gallery .flip-card .inner1 {
+    background-color: #5F55BD;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: 48px;
+    height: 32px;
+}
+
+
+.payment-gallery .flip-card .outer1 {
+    background-color: #9F99D7;
+    border-radius: 0.25rem;
+    width: 24px;
+    height: 16px;
+    transform: translate(40%, -50%);
+
+}
+
+.payment-gallery .flip-card .fa-cc-visa {
+    color: blue;
+    background-color: white;
+    font-size: 2rem;
+
+}
+
+
+.payment-gallery .flip-card .badge1 {
+    color: white;
+    background: radial-gradient(#5348B8 20% 60%, white);
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0.2rem 0.3rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 0.5rem;
+}
+
+.payment-gallery .flip-card>.d-flex {
+    margin-bottom: 1.5rem;
+}
+
+.payment-gallery p {
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline;
+}
+
+.payment-gallery .balls {
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.payment-gallery span {
+    color: white;
+    font-size: 0.7rem;
+    display: block;
+    padding-top: 0.5rem;
+}
+
+.payment-gallery .date {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.payment-gallery .flip-card .inner2 {
+    background-color: #D2335E;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: 48px;
+    height: 32px;
+}
+
+.payment-gallery .flip-card .outer2 {
+    background-color: #E4859E;
+    border-radius: 0.25rem;
+    width: 24px;
+    height: 16px;
+    transform: translate(40%, -50%);
+
+}
+
+.payment-gallery .flip-card p {
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline;
+}
+
+.payment-gallery .flip-card>.d-flex {
+    margin-bottom: 1.5rem;
+}
+
+.payment-gallery .flip-card>.d-flex {
+    margin-bottom: 1.5rem;
+}
+
+.payment-gallery .flip-card .inner3 {
+    background-color: #4763C6;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: 48px;
+    height: 32px;
+}
+
+.payment-gallery .flip-card .outer3 {
+    background-color: #91A1DD;
+    border-radius: 0.25rem;
+    width: 24px;
+    height: 16px;
+    transform: translate(40%, -50%);
+}
+
+.payment-gallery .flip-card .status {
+    color: #00C950;
+}
+
+
+/* End Payment Section */
+/* ============================== */
+
+/* Start Income Section */
+.income-section {
+    grid-area: income;
+    direction: rtl;
+}
+
+.income-section .income-gallery .income-card {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.income-section .income-card h3 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.income-section .income-card i,
+.income-section .income-card span {
+    font-size: 0.6rem;
+    color: #101828;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+}
+
+.income-card .color1 {
+    width: 12px;
+    height: 12px;
+    background-color: #00A63E;
+    margin-bottom: 0.6rem;
+}
+
+.income-card .color2 {
+    width: 12px;
+    height: 12px;
+    background-color: #EF4444;
+    margin-bottom: 0.6rem;
+}
+
+.gap {
+    gap: 0.25rem;
+}
+
+.gap2 {
+    gap: 1rem;
+}
+
+.income-card .graphs {
+    /* background-color: aqua; */
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.income-card .graph-card {
+    /* background-color: blue; */
+    width: 25%;
+    position: relative;
+}
+
+.income-card .graph-card .col1 {
+    background-color: #40C79A;
+    width: 0.8rem;
+    height: 5rem;
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+}
+
+.income-card .graph-card .col2 {
+    background-color: #EF4444;
+    position: absolute;
+    bottom: 1.35rem;
+    right: 1.05rem;
+    width: 0.8rem;
+    height: 2rem;
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+}
+
+.income-card .graph-card span {
+    color: #64748B;
+}
+
+.income-section .income-gallery .account-section {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.income-section .account-section h3 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.income-section .account-section i,
+.income-section .account-section span {
+    font-size: 0.6rem;
+    color: #101828;
+    margin-bottom: 0.75rem;
+}
+
+
+.income-section .account-section .account-card {
+    background-color: #F9FAFB;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.account-section .account-card .fa-university {
+    color: #155DFC;
+    background-color: #DBEAFE;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.account-section .account-card h5 {
+    font-size: 0.8rem;
+    margin-block: 0;
+}
+
+.account-section .account-card p {
+    font-size: 0.6rem;
+    color: var(--grey-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.account-section .account-card span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.account-section .account-card .price {
+    color: red;
+    margin-top: 0;
+    display: block;
+    width: 20rem;
+    text-align: left;
+}
+
+.margin {
+    margin-inline: 0.8rem;
+}
+
+.account-section .account-card .fa-piggy-bank {
+    color: #00A63E;
+    background-color: #DBFCE7;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.account-section .account-card .fa-credit-card {
+    color: #9810FA;
+    background-color: #F3E8FF;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+/* End Income Section */
+/* ================================= */
+
+/* Start Overview Section */
+.overview-section {
+    grid-area: view;
+    direction: rtl;
+}
+
+.overview-section .container {
+    background-color: white;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.overview-section .container h3 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+
+}
+
+.overview-section .container span,
+.overview-section .container i {
+    font-size: 0.6rem;
+    color: #101828;
+    margin-bottom: 0.75rem;
+}
+
+.overview-section .total-overview {
+    background-color: #EEF5FF;
+    padding: 1rem;
+    border: 1px solid #F2F3F5;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.overview-section .total-overview h5 {
+    color: #155DFC;
+    margin-block: 0;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+}
+
+.overview-section .total-overview .total-price {
+    color: #1C398E;
+    margin-block: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.details-overview {
+    text-align: end;
+}
+
+.overview-section .total-overview .remain-title {
+    color: var(--grey-color);
+    margin-block: 0;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-left: 1.2rem;
+}
+
+.overview-section .total-overview span {
+    color: var(--grey-color);
+    margin-block: 0;
+    font-weight: 600;
+    font-size: 0.6rem;
+    display: block;
+    text-align: end;
+    margin-right: 3rem;
+}
+
+.overview-section .total-overview .remain {
+    color: #00A63E;
+    margin-block: 0;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+.overview-section .user {
+    font-size: 0.6rem;
+    color: var(--grey-color);
+    margin-bottom: 0;
+}
+
+.overview-section .line-width {
+    height: 0.4rem;
+    background-color: #e5e7eb;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.overview-section .line-width .nested-line {
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, #4277FF);
+    border-radius: 1rem;
+}
+
+.overview-section .gallery-card {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.overview-section .overview-card {
+    background-color: #F5F6F8;
+    padding: 1rem;
+    border: 1px solid #D5D9DE;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.overview-section .overview-card .fa-film {
+    color: #F54900;
+    background-color: #FFEDD4;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.overview-section .overview-card h5 {
+    margin-block: 0;
+    font-size: 0.7rem;
+}
+
+.overview-section .overview-card p {
+    font-size: 0.6rem;
+    color: var(--grey-color);
+    margin-top: 0.1rem;
+}
+
+.overview-section .overview-card .user {
+    font-size: 0.6rem;
+    color: var(--grey-color);
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.overview-section .overview-card .container2 {
+    gap: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.overview-section .overview-card .view-price {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-block: 0;
+}
+
+
+.overview-section .overview-card .badge1 {
+    color: #166534;
+    font-size: 0.6rem;
+    background-color: #DCFCE7;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.overview-section .overview-card .bg-view1 {
+    background-color: #DCFCE7;
+
+}
+
+.overview-section .line-width .nested-line1 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #FF6900);
+    border-radius: 1rem;
+}
+
+.overview-section .overview-card .fa-file-invoice-dollar {
+    color: #E7000B;
+    background-color: #FEE2E2;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.overview-section .overview-card .badge2 {
+    color: #991B1B;
+    font-size: 0.6rem;
+    background-color: #FEE2E2;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.overview-section .line-width .nested-line2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FB2C36);
+    border-radius: 1rem;
+}
+
+.overview-section .overview-card .fa-heart {
+    color: #E60076;
+    background-color: #FCE7F3;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.overview-section .overview-card .badge3 {
+    color: #A0400E;
+    font-size: 0.6rem;
+    background-color: #FEF3C7;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.overview-section .line-width .nested-line3 {
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(to right, #F6339A);
+    border-radius: 1rem;
+}
+
+.overview-section .overview-card .fa-shopping-cart {
+    color: #00A63E;
+    background-color: #DCFCE7;
+    padding: 0.5rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.overview-section .overview-card .badge4 {
+    color: #16654A;
+    font-size: 0.6rem;
+    background-color: #DCFCE7;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.overview-section .line-width .nested-line4 {
+    width: 85%;
+    height: 100%;
+    background: linear-gradient(to right, #00C950);
+    border-radius: 1rem;
+}
+
+/* End Overview Section */
+/* ================================ */

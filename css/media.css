@@ -1,0 +1,164 @@
+/* Mobile First */
+@media (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav nav nav nav"
+            "recharge recharge recharge recharge recharge recharge recharge recharge recharge recharge recharge recharge"
+            "activity activity activity activity activity activity activity activity activity activity activity activity"
+            "deal deal deal deal deal deal deal deal deal deal deal deal"
+            "month month month month month month month month month month month month"
+            "view view view view view view view view view view view view"
+            "income income income income income income income income income income income income"
+            "payment payment payment payment payment payment payment payment payment payment payment payment"
+        ;
+
+    }
+
+    aside {
+        display: none;
+    }
+
+    .recharging-section .gallery-card {
+        flex-direction: column-reverse;
+    }
+
+    .recharging-section .gallery-card .inner {
+        width: 100%;
+    }
+
+    .activities-section .container {
+        width: 95%;
+
+    }
+
+    .resets-monthly-section .container {
+        width: 95%;
+    }
+
+    .overview-section .container {
+        width: 95%;
+    }
+
+    .account-section .account-card .price {
+        display: inline;
+        width: 5rem;
+        text-align: none;
+    }
+
+    .flip-card{
+        width: 100%;
+    }
+
+
+}
+
+/* medium  */
+@media (min-width:769px) and (max-width:1280px) {
+    .main-layout {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav nav nav aside"
+        "recharge recharge recharge recharge recharge recharge recharge recharge recharge recharge recharge aside"
+        "income income income income income activity activity activity activity activity activity aside"
+        "deal deal deal deal deal deal deal deal deal deal deal aside"
+        "month month month month month month month month month month month aside"
+        "payment payment payment payment payment view view view view view view aside";
+
+            
+    }
+
+    aside {
+        width:80%;
+
+        direction: rtl;
+    }
+
+
+    .aside-title .coins {
+        background-color: #3843E7;
+        display: inline;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.4rem;
+        border-radius: 0.75rem;
+    }
+
+    .aside-title .aside-content h1 {
+        display: none;
+    }
+
+    .aside-title .aside-content p {
+        display: none;
+    }
+
+    .aside-buttons span {
+        display: none;
+    }
+
+    .aside-buttons {
+        margin-bottom: 1rem;
+    }
+
+    .aside-buttons .btn {
+        padding: 0.3rem 0.4rem;
+        margin-right: 0.7rem;
+    }
+
+    .aside-buttons button {
+        width: 30%;
+        text-align: center;
+        display: block;
+    }
+
+    .aside-buttons i {
+        padding: 0rem;
+        padding-left: 0.5rem;
+        text-align: center;
+    }
+
+    aside .speed-title {
+        display: none;
+    }
+
+    .speed-actions span {
+        display: none;
+    }
+
+    aside .speed-actions .send-money i {
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        padding: 0.5rem 0.2rem;
+        background-color: #DBE8FC;
+    }
+
+
+    .recharging-section .gallery-card .inner {
+        width: 33.333%;
+    }
+
+    .activities-section .container {
+        width: 100%;
+        
+
+    } 
+
+    .resets-monthly-section .container {
+        width: 100%;
+    }
+
+    .overview-section .container {
+        width: 100%;
+    }
+
+    .account-section .account-card .price {
+        display: inline;
+        width: 5rem;
+        text-align: none;
+    }
+
+    .flip-card{
+        width:100%;
+    }
+
+
+}
